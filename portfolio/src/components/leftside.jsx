@@ -1,9 +1,9 @@
-import { GitHub, Instagram, LinkedIn, Twitter } from '@mui/icons-material'
+// import { GitHub, Instagram, LinkedIn, Twitter } from '@mui/icons-material'
 import { HashLink as Link } from 'react-router-hash-link'
-import './leftbar.scss'
+// import './leftbar.scss'
 import { useState } from 'react'
 
-const Leftbar = () => {
+function leftBar(){
   const [activeLink, setActiveLink] = useState('about')
 
   const handleLinkClick = item => {
@@ -50,17 +50,17 @@ const Leftbar = () => {
         <ul>
           <li>
             <a href='https://github.com/salman7875' target='_blank'>
-              <GitHub className='icon' />
+              {/* <GitHub className='icon' /> */}
             </a>
           </li>
           <li>
             <a href='#'>
-              <Instagram className='icon' />
+              {/* <Instagram className='icon' /> */}
             </a>
           </li>
           <li>
             <a href='#'>
-              <Twitter className='icon' />
+              {/* <Twitter className='icon' /> */}
             </a>
           </li>
           <li>
@@ -68,7 +68,7 @@ const Leftbar = () => {
               href='https://www.linkedin.com/in/mohammad-salman-ansari-6b8929253/'
               target='_blank'
             >
-              <LinkedIn className='icon' />
+              {/* <LinkedIn className='icon' /> */}
             </a>
           </li>
         </ul>
@@ -77,4 +77,4 @@ const Leftbar = () => {
   )
 }
 
-export default Leftbar
+export default leftBar
